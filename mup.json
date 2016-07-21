@@ -1,0 +1,27 @@
+{
+  // Server authentication info
+  "servers": [
+    {
+      "host": "120.24.66.173",
+      "username": "root",
+      "pem": "~/.ssh/id_rsa"
+, "sshOptions":{"port": 32133}    }
+  ],
+
+  // Install MongoDB in the server, does not destroy local MongoDB on future setup
+  "setupMongo": true,
+
+  // Application name (No spaces)
+  "appName": "byme-cosmic",
+
+  // Location of app (local directory)
+  "app": ".",
+
+  // Configure environment
+  "env": {
+    "PORT": 1200,
+    "ROOT_URL": "http://120.24.66.173:1200"
+  },
+
+  "deployCheckWaitTime": 10
+}
